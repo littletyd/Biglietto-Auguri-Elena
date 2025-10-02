@@ -43,7 +43,7 @@ h1 {
 }
 
 /* Media Query per dispositivi con larghezza massima di 600px (smartphone) */
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .card {
     padding: 30px;
     line-height: 1.4;
