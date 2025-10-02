@@ -15,6 +15,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+  <script>
+  const password = "Rotunnina123"; // scegli una password
+  let input = prompt("Inserisci la password per vedere il biglietto:");
+  if(input !== password) {
+    document.body.innerHTML = "<h2>Accesso negato</h2>";
+    throw "Accesso negato"; // ferma il caricamento del resto
+  }
+</script>
   <!-- Confetti sullo sfondo -->
   <div class="confetti"></div>
 
