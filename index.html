@@ -15,15 +15,18 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <script>
-  const password = "021097"; // scegli una password
-  let input = prompt("Inserisci la tua data per vedere il biglietto:");
-  if(input !== password) {
-    document.body.innerHTML = "<h2>Accesso negato</h2>";
-    throw "Accesso negato"; // ferma il caricamento del resto
+<script>
+  const password = "021097"; // la tua password
+  let input = prompt("Inserisci la password per vedere il biglietto:");
+  const content = document.getElementById("content");
+  if(input === password){
+    content.style.display = "block"; // mostra il contenuto
+  } else {
+    document.body.innerHTML = "<h2 style='text-align:center;margin-top:50px;color:white;'>Accesso negato</h2>";
   }
 </script>
-<div id="content">
+
+<div id="content" style="display:none;">
   <!-- Confetti sullo sfondo -->
   <div class="confetti"></div>
 
