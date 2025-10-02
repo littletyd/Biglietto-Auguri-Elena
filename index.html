@@ -19,10 +19,10 @@
   const password = "021097";
   let input = prompt("Inserisci la password per vedere il biglietto:");
   if(input === password){
-    document.getElementById("content").style.display = "flex";
-  } else {
-    document.body.innerHTML = "<h2 style='text-align:center;margin-top:50px;color:white;'>Accesso negato</h2>";
-  }
+  document.getElementById("content").style.display = "flex";
+} else {
+  document.body.innerHTML = "<h2 style='text-align:center;margin-top:50px;color:white;'>Accesso negato</h2>";
+}
 </script>
 
 <div id="content" style="display:none;">
