@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biglietto di auguri</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- Google Fonts: Cormorant -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Confetti sullo sfondo -->
+  <div class="confetti"></div>
+
+  <div class="card">
+    <h1>Tanti auguri piccola Rotunnina</h1>
+
+<div class="group group1">
+  <p id="line1">Ci siamo rotunnati tanto tempo fa,</p>
+  <p id="line2">Quando tra Rieti e Roma ce toccava andà.</p>
+  <p id="line3">Ricordo alcune prime prove canore e serate belle,</p>
+  <p id="line4">Pronunciando al microfono “Cari fratelli e Care sorelle”</p>
+</div>
+
+<div class="group group2">
+  <p id="line5">Poi i pensieri sulla vita, le teorie disilluse sull’amore,</p>
+  <p id="line6">I momenti passati insieme, dialoghi che duravano ore,</p>
+  <p id="line7">I viaggi in macchina, le sbronze, i concerti,</p>
+  <p id="line8">Sono questi i ricordi per cui sorridi e ti diverti.</p>
+</div>
+
+<div class="group group3">
+  <p id="line9">Discussioni e accesi confronti non sono mai mancati, è vero,</p>
+  <p id="line10">Ma è questo che rende il nostro legame sincero.</p>
+  <p id="line11">A volte lontani, rinchiusi nei nostri dolori,</p>
+  <p id="line12">Abbiamo visto e vissuto anche i momenti peggiori</p>
+</div>
+
+<div class="group group4">
+  <p id="line13">Io però nei tuoi occhi vedo una passione che non deve finire,</p>
+  <p id="line14">Una dolce magia che mai potrà svanire</p>
+  <p id="line15">Con tutte le tue gioie e i tuoi sogni, resta sempre bambina,</p>
+  <p id="line16">Ti voglio tanto bene Rotunnina!</p>
+</div>
+
+    <!-- Player audio -->
+    <audio id="songPlayer" controls>
+      <source src="canzone.mp3" type="audio/mpeg">
+      Il tuo browser non supporta l'elemento audio.
+    </audio>
+
+    <!-- Pulsanti icone sulla stessa linea -->
+    <div class="button-container">
+      <a href="canzone.mp3" download class="downloadBtn">
+        <button id="magicBtn">
+            <i class="fas fa-music"></i>
+        </button>
+      </a>
+
+      <a href="regalo.pdf" download class="downloadBtn">
+        <button id="magicBtn">
+            <i class="fas fa-gift"></i>
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
