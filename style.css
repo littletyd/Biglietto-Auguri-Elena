@@ -224,3 +224,10 @@ audio::-webkit-media-controls-timeline {
 audio::-webkit-slider-thumb {
   background-color: white;
 }
+
+#content {
+  display: none; /* già lo usi con JS */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* prende tutta l’altezza della finestra */
+}
