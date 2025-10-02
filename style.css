@@ -68,7 +68,7 @@ p[id^="line"] {
 
 @media (max-width: 600px) {
   p[id^="line"] {
-    font-size: 0.7em;
+    font-size: 2.7em;
   }
 }
 
