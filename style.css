@@ -47,10 +47,10 @@ h1 {
   .card {
     padding: 30px;
     line-height: 1.4;
-    width: 20%;
+    width: 85%;
   }
   h1 {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #A27B68;
     animation: pop 0.7s ease forwards;
   }
