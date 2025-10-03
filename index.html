@@ -15,41 +15,40 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
-<div id="content">
+<div id="content" style="display:none;">
   <!-- Confetti sullo sfondo -->
   <div class="confetti"></div>
 
   <div class="card">
     <h1>Tanti auguri piccola Rotunnina</h1>
 
-<div class="group group1">
-  <p id="line1">Ci siamo rotunnati tanto tempo fa,</p>
-  <p id="line2">Quando tra Rieti e Roma ce toccava andà.</p>
-  <p id="line3">Ricordo alcune prime prove canore e serate belle,</p>
-  <p id="line4">Pronunciando al microfono “Cari fratelli e Care sorelle”</p>
-</div>
+  <div class="group group1">
+    <p id="line1">Ci siamo rotunnati tanto tempo fa,</p>
+    <p id="line2">Quando tra Rieti e Roma ce toccava andà.</p>
+    <p id="line3">Ricordo alcune prime prove canore e serate belle,</p>
+    <p id="line4">Pronunciando al microfono “Cari fratelli e Care sorelle”</p>
+  </div>
 
-<div class="group group2">
-  <p id="line5">Poi i pensieri sulla vita, le teorie disilluse sull’amore,</p>
-  <p id="line6">I momenti passati insieme, dialoghi che duravano ore,</p>
-  <p id="line7">I viaggi in macchina, le sbronze, i concerti,</p>
-  <p id="line8">Sono questi i ricordi per cui sorridi e ti diverti.</p>
-</div>
+  <div class="group group2">
+    <p id="line5">Poi i pensieri sulla vita, le teorie disilluse sull’amore,</p>
+    <p id="line6">I momenti passati insieme, dialoghi che duravano ore,</p>
+    <p id="line7">I viaggi in macchina, le sbronze, i concerti,</p>
+    <p id="line8">Sono questi i ricordi per cui sorridi e ti diverti.</p>
+  </div>
 
-<div class="group group3">
-  <p id="line9">Discussioni e accesi confronti non sono mai mancati, è vero,</p>
-  <p id="line10">Ma è questo che rende il nostro legame sincero.</p>
-  <p id="line11">A volte lontani, rinchiusi nei nostri dolori,</p>
-  <p id="line12">Abbiamo visto e vissuto anche i momenti peggiori</p>
-</div>
+  <div class="group group3">
+    <p id="line9">Discussioni e accesi confronti non sono mai mancati, è vero,</p>
+    <p id="line10">Ma è questo che rende il nostro legame sincero.</p>
+    <p id="line11">A volte lontani, rinchiusi nei nostri dolori,</p>
+    <p id="line12">Abbiamo visto e vissuto anche i momenti peggiori</p>
+  </div>
 
-<div class="group group4">
-  <p id="line13">Io però nei tuoi occhi vedo una passione che non deve finire,</p>
-  <p id="line14">Una dolce magia che mai potrà svanire</p>
-  <p id="line15">Con tutte le tue gioie e i tuoi sogni, resta sempre bambina,</p>
-  <p id="line16">Ti voglio tanto bene Rotunnina!</p>
-</div>
+  <div class="group group4">
+    <p id="line13">Io però nei tuoi occhi vedo una passione che non deve finire,</p>
+    <p id="line14">Una dolce magia che mai potrà svanire</p>
+    <p id="line15">Con tutte le tue gioie e i tuoi sogni, resta sempre bambina,</p>
+    <p id="line16">Ti voglio tanto bene Rotunnina!</p>
+  </div>
 
     <!-- Player audio -->
     <audio id="songPlayer" controls>
@@ -73,6 +72,45 @@
     </div>
   </div>
 </div>
-<script src="script.js"></script>
+  <script src="script.js"></script>
+  <script>
+    const password = "021097"; // la tua password
+    const userInput = prompt("Inserisci la tua data di nascita (GGMMAA) per vedere il biglietto:");
+
+    if(userInput === password){
+      document.getElementById("content").style.display = "flex";
+    } else {
+      // Messaggio se password errata
+      document.body.style.background = "url('https://i.postimg.cc/j2LSZWTB/pexels-gabby-k-7114345.jpg') no-repeat center center fixed";
+      document.body.style.backgroundSize = "cover";
+      // Overlay nero più scuro
+      const overlay = document.createElement('div');
+      overlay.style.position = 'fixed';
+      overlay.style.top = 0;
+      overlay.style.left = 0;
+      overlay.style.width = '100%';
+      overlay.style.height = '100%';
+      overlay.style.backgroundColor = 'rgba(0,0,0,0.5)'; // più scuro
+      overlay.style.zIndex = 10;
+      document.body.appendChild(overlay);
+
+      // Scritta ACCESSO NEGATO
+      const msg = document.createElement('h1');
+      msg.textContent = "ACCESSO NEGRATO";
+      msg.style.backgroundColor = "black";
+      msg.style.width = "100%";
+      msg.style.paddingTop = "25";
+      msg.style.paddingBottom = "25";
+      msg.style.color = "red";
+      msg.style.textAlign = "center";
+      msg.style.position = "fixed";
+      msg.style.top = "50%";
+      msg.style.left = "50%";
+      msg.style.transform = "translate(-50%, -50%)";
+      msg.style.fontSize = 170;
+      msg.style.zIndex = 11;
+      document.body.appendChild(msg);
+    }
+  </script>
 </body>
 </html>
