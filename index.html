@@ -81,6 +81,7 @@
       document.getElementById("content").style.display = "flex";
     } else {
       // Messaggio se password errata
+      document.getElementById("content").remove(); // rimuove la card
       document.body.style.background = "url('https://i.postimg.cc/j2LSZWTB/pexels-gabby-k-7114345.jpg') no-repeat center center fixed";
       document.body.style.backgroundSize = "cover";
       // Overlay nero più scuro
